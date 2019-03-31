@@ -61,13 +61,17 @@ export default {
     width: 90%;
     justify-self: center;
     background: #f7e4df;
-    box-shadow: 5px 5px 10px #222222;
+    -webkit-box-shadow: 5px 5px 10px #222222;
+            box-shadow: 5px 5px 10px #222222;
+    -webkit-transition: .5s;
     transition: .5s;
   }
   .wrapper-cards:hover{
     opacity: .95;
-    transform: translate3d(-10px, 0px, 10px);
-    box-shadow: 10px 10px 20px #222222;
+    -webkit-transform: translate3d(-10px, 0px, 10px);
+            transform: translate3d(-10px, 0px, 10px);
+    -webkit-box-shadow: 10px 10px 20px #222222;
+            box-shadow: 10px 10px 20px #222222;
   }
   .wrapper-cards .image{
     height: 40vh;
@@ -91,7 +95,8 @@ export default {
   }
   .wrapper .inputInfo input, button{
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: 50%;
     height: 8vh;
     text-align: center;
