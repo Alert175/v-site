@@ -80,7 +80,25 @@ export default {
       font-size: 30px;
     }
   }
-  @media screen and (max-width: 1030px){
-    
+  @media screen and (max-width: 900px){
+    .wrapper-contact{
+      grid-template-columns: 1fr;
+    }
+    .wrapper-contact{
+      justify-items: center;
+    }
+    .wrapper-contact iframe{
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 700px){
+    .wrapper-contact iframe{
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .wrapper-contact iframe{
+      width: 50vh;
+    }
   }
 </style>
