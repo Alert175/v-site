@@ -31,13 +31,18 @@
     display: grid;
     height: 90vh;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: url('../assets/beautiful-beauty-colors-2040406.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    perspective: 500px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
   }
   .section-home h1{
     font-family: 'Raleway', sans-serif;
@@ -45,12 +50,16 @@
     color: #ab672f;
     padding: 10px 20px;
     border: 1px solid #ab672f;
-    transform-style: inherit;
-    align-self: center;
+    -webkit-transform-style: inherit;
+            transform-style: inherit;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-transition: .5s;
     transition: .5s;
   }
   .section-home h1:hover{
-    transform: rotate3d(1, 1, 1, 30deg);
+    -webkit-transform: rotate3d(1, 1, 1, 30deg);
+            transform: rotate3d(1, 1, 1, 30deg);
     background: #f7f7c6;
   }
   .section-text{
@@ -61,7 +70,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80vh;
     grid-column-gap: 20px;
-    align-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
   }
   .section-text h1, p{
     text-align: center;
@@ -75,7 +85,8 @@
     font-size: 25px;
   }
   .section-text .wrap-photo{
-    perspective: 500px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
   }
   .section-text .photo{
     width: 100%;
@@ -83,12 +94,16 @@
     background-image: url('../assets/girl.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 5px 5px 10px #222222;
+    -webkit-box-shadow: 5px 5px 10px #222222;
+            box-shadow: 5px 5px 10px #222222;
+    -webkit-transition: .5s;
     transition: .5s;
   }
   .section-text .photo:hover{
     opacity: .95;
-    transform: translate3d(-10px, 0px, 10px);
-    box-shadow: 10px 10px 20px #222222;
+    -webkit-transform: translate3d(-10px, 0px, 10px);
+            transform: translate3d(-10px, 0px, 10px);
+    -webkit-box-shadow: 10px 10px 20px #222222;
+            box-shadow: 10px 10px 20px #222222;
   }
 </style>

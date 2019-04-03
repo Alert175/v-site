@@ -35,7 +35,6 @@ export default {
         this.cards.push({img: this.cardImage, text: this.cardText});
         this.cardImage = '';
         this.cardText = '';
-        console.log(this.cardImage + ' ' + this.cardText);
       }
     }
   }
@@ -46,19 +45,19 @@ export default {
   .wrapper{
     display: grid;
     background: #f7edd2;
-    padding: 20px 10px 0px 10px;
   }
   .wrapper-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 20px;
-    min-height: 80vh;
+    min-height: 78vh;
+    margin: 1vh auto;
   }
   .wrapper-cards{
     display: grid;
-    height: 50vh;
-    width: 90%;
+    height: 40vh;
+    width: 80%;
     justify-self: center;
     background: #f7e4df;
     -webkit-box-shadow: 5px 5px 10px #222222;
@@ -74,13 +73,14 @@ export default {
             box-shadow: 10px 10px 20px #222222;
   }
   .wrapper-cards .image{
-    height: 40vh;
+    height: 30vh;
     background: #7834a1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .wrapper-cards .text{
+    height: 10vh;
     text-align: center;
     font-family: 'Indie Flower', 'Neucha', cursive;
     font-size: 25px;
@@ -91,7 +91,6 @@ export default {
     grid-template-rows: 10vh;
     grid-gap: 20px;
     background: #211c00;
-    margin-top: 20px;
   }
   .wrapper .inputInfo input, button{
     justify-self: center;

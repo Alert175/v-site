@@ -3,7 +3,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/gallery">Gallery</router-link>
-      <router-link to="/about">About</router-link>  
+      <router-link to="/blog">Blog</router-link>
+      <router-link to="/about">Contact</router-link>
     </div>
     <transition name='fade' mode="out-in">
       <router-view/>
@@ -17,7 +18,7 @@
 }
 #nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 10vh;
   background: #1f2825;
   justify-items: center;
@@ -42,10 +43,12 @@
   color: #3e4f71;
 }
 .fade-enter-active, .fade-leave-active {
+  -webkit-transition: 1s;
   transition: 1s;
 }
 .fade-enter, .fade-leave-to {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   opacity: 0;
 }
 </style>
