@@ -104,4 +104,29 @@ export default {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 15px;
   }
+  @media screen and (max-width: 1100px) {
+    .wrapper-cards .text{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 800px){
+    .wrapper-gallery{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr;
+    }
+    .wrapper .inputInfo input, button{
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .wrapper-gallery{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    .wrapper .inputInfo{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: 10px 10px;
+    }
+  }
 </style>

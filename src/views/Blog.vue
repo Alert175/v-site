@@ -101,9 +101,33 @@ export default {
     border: none;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 20px;
+    width: auto;
   }
   .hover:hover{
     -webkit-transform: translate3d(-10px, 10px, 0px);
             transform: translate3d(-10px, 10px, 0px);
   }
+  @media screen and (max-width: 1100px){
+    .blog-card .textPost{
+      font-size: 15px;
+    }
+    .templatePost input, textarea, button{
+      width: 100%;
+    }
+    textarea{
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 1100px){
+    .wrapper-blog{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  }
+  @media screen and (max-width: 620px){
+      .wrapper-blog{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+    }
 </style>

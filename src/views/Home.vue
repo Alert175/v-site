@@ -29,7 +29,7 @@
 <style lang="css" scoped>
   .section-home{
     display: grid;
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -64,7 +64,7 @@
   }
   .section-text{
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     width: 90%;
     margin-left: 5%;
     grid-template-columns: 1fr 1fr;
@@ -105,5 +105,11 @@
             transform: translate3d(-10px, 0px, 10px);
     -webkit-box-shadow: 10px 10px 20px #222222;
             box-shadow: 10px 10px 20px #222222;
+  }
+  @media screen and (max-width: 900px) {
+    .section-text{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
   }
 </style>

@@ -65,4 +65,22 @@ export default {
   .wrapper .footer p{
     margin: 0;
   }
+  @media screen and (max-width: 1245px){
+    .wrapper-contact iframe{
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: 1030px){
+    .wrapper-contact iframe{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 1030px){
+    .wrapper-contact .info p{
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 1030px){
+    
+  }
 </style>
